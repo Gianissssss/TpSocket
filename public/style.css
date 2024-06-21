@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+  
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+    width: 200px;
+    
+  }
+  
+  button {
+    background-color: #4CAF50;
+    margin: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos para la sección de crear ticket */
+  #new-ticket-form {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilos para la sección de enviar mensaje */
+  .jumbotron {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+  }
+  
+  #mensajes {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+
+  .container{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+/* Estilos para la pantalla de turnos */
+
+/* Contenedor principal */
+.container-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Sección izquierda */
+.left-section {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#current-turn {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#next-turn-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#next-turn-button:hover {
+  background-color: #3e8e41;
+}
+
+/* Sección derecha */
+.right-section {
+  width: 60%;
+  padding: 20px;
+}
+
+#next-turns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#next-turns li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#next-turns li:last-child {
+  border-bottom: none;
+}
+
+/* Sección inferior */
+.bottom-section {
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#all-turns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#all-turns li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#all-turns li:last-child {
+  border-bottom: none;
+}

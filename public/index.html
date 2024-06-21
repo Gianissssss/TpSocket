@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Tickets</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="server.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Sistema de Turnos</h1>
+  <div class="container-ticket">
+    <div class="left-section">
+      <div id="current-turn"></div>
+      <audio id="audio" src="siguiente.mp3" type="audio/mp3"></audio>
+      <button id="next-turn-button" onclick="playSound()">Siguiente Turno</button>
+    </div>
+    <div class="right-section">
+      <ul id="next-turns"></ul>
+    </div>
+    <div class="bottom-section">
+      <ul id="all-turns"></ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <br>
+    <div class="jumbotron">
+      <h1 class="display-4">Enviar mensaje</h1>
+      <br>
+      <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+      <br>
+      <textarea id="mensaje" type="text" class="form-control" placeholder="Escriba su mensaje..."></textarea>
+      <br>
+      <button id="enviar" type="submit" class="btn btn-success">Enviar</button>
+    </div>
+    <h1>Mensajes</h1>
+    <div id="mensajes">
+      
+    </div>
+    
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+    function playSound() {
+      var audio = document.getElementById("audio");
+      audio.play();
+}
+  </script>
+</body>
+</html>
